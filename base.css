@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 :root {
-	--color-black: #2A2A2A;
-	--color-white: #ffffff;
 	--color-red: #FF4136;
 	--color-blue: #0074D9;
 	--color-aqua: #7FDBFF;
@@ -16,9 +14,21 @@
 	--color-purple: #B10DC9;
 	--color-maroon: #85144B;
 	--color-brown: #795548;
-	--color-grey: #AAAAAA;
-	--color-light-grey: #DDDDDD;
-	--color-dark-grey: #333333;
+	--color-black: #2A2A2A;
+	--color--grey10:#171a20;
+	--color--grey15:#222;
+	--color--grey20:#333333;
+	--color--grey25:#444;
+	--color--grey30:#5c5e62;
+	--color--grey35:#757575;
+	--color--grey40:#a2a3a5;
+	--color--grey50:#d0d1d2;
+	--color--grey60:#eee;
+	--color--grey70:#f4f4f4;
+	--color-white: #ffffff;
+
+	--color-light-grey: var(--color-grey50);
+	--color-dark-grey: var(--color-grey20);
 	
 	--text-color: var(--color-dark-grey);
 	--background-color: var(--color-white);
@@ -521,10 +531,6 @@ details[open] {
 	background-color: var(--background-color);
 }
 
-details[open]::before {
-	
-}
-
 summary {
 	padding: 0.5rem 1em 0.5rem 0;
 	display: block;
@@ -583,6 +589,10 @@ summary::-webkit-details-marker {
 
 .text-right {
 	text-align: right;
+}
+
+.uppercase {
+	text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
