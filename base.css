@@ -451,6 +451,7 @@ table {
 	overflow-x: auto;
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 	border-collapse: collapse !important;
+	font-variant-numeric: tabular-nums;
 }
 
 thead {
