@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 :root {
 	--color-red: #FF4136;
 	--color-blue: #0074D9;
@@ -34,6 +32,10 @@
 	--background-color: var(--color-white);
 	--background-color-alt: var(--color-light-grey); 
 	--link-color: var(--color-blue);
+
+	--main-color: #ff8605;
+	--main-color-light: #ff8605;
+	--main-color-dark: #ff5404;
 }
 
 ::selection {
@@ -42,13 +44,13 @@
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
+	body.enable-dm {
 		--text-color: var(--color-light-grey);
 		--background-color: var(--color-black);
 		--background-color-alt: var(--color-grey);
 	}
 
-	::selection {
+	body.enable-dm ::selection {
 		color: var(--background-color);
 		background-color: var(--text-color);
 	}
@@ -57,7 +59,7 @@
 		content: "dark";
 	}
 	
-	img:not([src*=".svg"]) {
+	body.enable-dm img:not([src*=".svg"]) {
 		filter: grayscale(30%);
 	}
 	
@@ -76,8 +78,8 @@ html {
 body {
 	color: var(--text-color);
 	background-color: var(--background-color);
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	/* font-family: "IBM Plex Sans", sans-serif; */
+	/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+	font-family: "IBM Plex Sans", sans-serif;
 	font-size: 1.1rem;
 	line-height: 1.6;
 	text-rendering: optimizeLegibility;
@@ -166,17 +168,13 @@ sup {
 
 .container {
 	width: 95%;
-	max-width: 960px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
 .row {
-	display: flex;
-	flex-wrap: nowrap;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: auto;
-	align-content: start;
+  display: flex;
+	flex-wrap: no-wrap;
 	margin: 0 -0.5rem 0 -0.5rem;
 }
 
@@ -186,34 +184,38 @@ sup {
 
 [class*="col"] {
 	margin: 0 0.5rem 0 0.5rem;
+	padding: 0;
 }
 
 .col {
+	flex-grow: 1;
+  flex-shrink: 1;
+	flex-basis: 1;
 	flex: 1;
 }
 
 .col-1 {
-	width: 16.667%;
+  width: calc(100% / 12);
 }
 
 .col-2 {
-	width: 33.334%;
+  width: calc(100% / 12 * 2);
 }
 
 .col-3 {
-	width: 50%;
+  width: calc(100% / 12 * 3);
 }
 
 .col-4 {
-	width: 66.667%;
+  width: calc(100% / 12 * 4);
 }
 
 .col-5 {
-	width: 83.335%;
+  width: calc(100% / 12 * 5);
 }
 
 .col-6 {
-	width: 100%;
+  width: calc(100% / 2);
 }
 
 @media (max-width: 768px) {
@@ -281,6 +283,7 @@ ul,
 ol {
 	margin-top: 0;
 	margin-bottom: 1rem;
+	margin-left: 1rem;
 	padding-left: 0;
 }
 
