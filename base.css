@@ -182,6 +182,10 @@ sup {
   justify-content: space-between;
 }
 
+.row.baseline {
+  align-items: baseline;
+}
+
 .row:not(:last-child) {
   padding-bottom: 1rem;
 }
