@@ -78,12 +78,12 @@ html {
 body {
   color: var(--text-color);
   background-color: var(--background-color);
-  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.1rem;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   margin: 0;
+  hyphens: auto;
 }
 
 @media (max-width: 768px) {
@@ -119,10 +119,6 @@ img {
 
 hr {
   height: 0;
-}
-
-p {
-  hyphens: auto;
 }
 
 abbr[title] {
@@ -349,6 +345,9 @@ ol ol {
 pre {
   margin-top: 0;
   margin-bottom: 10px;
+  tab-size: 4;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 
 pre code {
@@ -362,6 +361,7 @@ pre code {
 code {
   padding: 2px;
   white-space: nowrap;
+  color: #333333;
   background-color: #d0d0d0;
   border: 1px solid #707070;
   border-radius: 4px;
@@ -411,9 +411,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
-  background-color: var(--background-color-alt);
+  background-color: var(--text-color);
   color: var(--background-color);
-  border: 2px solid var(--background-color-alt);
+  border: 2px solid var(--background-color);
   width: auto;
   padding: 0.5rem 1rem;
   font-weight: bold;
@@ -427,7 +427,11 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
   background-color: var(--text-color); 
-  border-color: var(--text-color);
+  border-color: var(-webkit-color-dark-grey: ;
+  -moz-color-dark-grey: ;
+  -ms-color-dark-grey: ;
+  -o-color-dark-grey: ;
+  color-dark-grey: ;);
 }
 
 button::-moz-focus-inner,
@@ -537,7 +541,7 @@ details {
   width: 100%;
   max-width: calc(100% - 2rem);
   position: relative;
-  border: 1px solid var(--background-color-alt);
+  border: 1px solid var(--text-color);
   border-radius: 6px;
   background-color: var(--background-color);
   color: var(--text-color);
@@ -583,7 +587,7 @@ summary::before, summary::after {
   top: 50%;
   right: 0;
   content: '';
-  background-color: currentColor;
+  background-color: var(--text-color);
   text-align: right;
   transform: translateY(-50%);
   transition: transform 0.2s ease-in-out;
