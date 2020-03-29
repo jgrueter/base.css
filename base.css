@@ -39,6 +39,7 @@
   --color: #118bee;
   --main-color: var(--color);
   --color-accent: var(--color-grey35);
+  --color-link: var(--color-blue);
   --color-bg: var(--color-white);
   --color-bg-secondary: var(--color-grey50);
   --color-secondary: var(--color-purple);
@@ -525,16 +526,26 @@ table {
   overflow-x: auto;
   overflow-y: hidden;
   -ms-overflow-style: -ms-autohiding-scrollbar;
-  border-collapse: collapse !important;
-  font-variant-numeric: tabular-nums;
+  border-collapse: collapse;
   border: 1px solid var(--color-bg-secondary);
+  font-variant-numeric: tabular-nums;
   border-radius: var(--border-radius);
   border-spacing: 0;
 }
 
 thead {
   display: table-header-group;
+  border: 0;
 }
+
+thead th:first-child {
+  border-top-left-radius: var(--border-radius);
+}
+
+thead th:last-child {
+  border-top-right-radius: var(--border-radius);
+}
+
 
 thead th {
   height: 2.5em;
@@ -542,16 +553,11 @@ thead th {
   text-align: var(--justify-important);
   background-color: var(--color);
   border-collapse: collapse;
-  border-radius: var(--border-radius);
   color: var(--color-bg);
 }
 
-table thead th:first-child {
-    border-top-left-radius: var(--border-radius);
-}
-
-table thead th:last-child {
-    border-top-right-radius: var(--border-radius);
+tbody {
+  border: 1px solid var(--color-bg-secondary);
 }
 
 tbody tr {
@@ -731,7 +737,7 @@ summary::-webkit-details-marker {
 }
 
 .bg-standard {
-  background-color: var(--background-color);
+  background-color: var(--color-bg);
 }
 
 .bg-black {
@@ -740,22 +746,6 @@ summary::-webkit-details-marker {
 
 .bg-white {
   background-color: var(--color-white);
-}
-
-.fill-black {
-  fill: var(--color-black);
-}
-
-.fill-white {
-  fill: var(--color-black);
-}
-
-.stroke-black {
-  stroke: var(--color-black);
-}
-
-.stroke-white {
-  stroke: var(--color-black);
 }
 
 .text-dark {
