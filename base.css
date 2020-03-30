@@ -744,23 +744,3 @@ summary::-webkit-details-marker {
 .shadow-5 {
   box-shadow: 0 15px 24px rgba(0, 0, 0, 0.22), 0 19px 76px rgba(0, 0, 0, 0.3);
 }
-
-.bg-standard {
-  background-color: var(--color-bg);
-}
-
-.bg-black {
-  background-color: var(--color-black);
-}
-
-.bg-white {
-  background-color: var(--color-white);
-}
-
-.text-dark {
-  color: var(--color-dark-grey);
-}
-
-.text-light {
-  color: var(--color-white);
-}
