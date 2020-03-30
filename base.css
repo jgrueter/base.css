@@ -317,12 +317,13 @@ blockquote footer {
 
 @media (max-width: 768px) {
   .row {
-    flex-direction: column;
+    display: block;
     margin: 0;
   }
 
-  [class*="col-"] {
+  [class*="col"] {
     width: 100%;
+    margin: 0;
     padding: 0;
   }
 }
