@@ -56,20 +56,20 @@
 
 @media (prefers-color-scheme: dark) {
   body.enable-dm {
-    --color: #0097fc;
+    /* --color: #0097fc; */
     --color-accent: #0097fc4f;
-    --color-bg: #333;
-    --color-bg-secondary: #555;
-    --color-secondary: #e20de9;
-    --color-secondary-accent: #e20de94f;
-    --color-shadow: #bbbbbb20;
-    --color-text: #f7f7f7;
-    --color-text-secondary: #aaa;
+    --color-bg: var(--color-grey20);
+    --color-bg-secondary: var(--color-grey30);
+    --color-secondary: var(--color-fuchsia);
+    --color-secondary-accent: var(--color-maroon);
+    --color-shadow: var(--color-grey10);
+    --color-text: var(--color-grey70);
+    --color-text-secondary: var(--color-grey40);
   }
 
   body.enable-dm ::selection {
-    color: var(--background-color);
-    background-color: var(--text-color);
+    color: var(--color-bg);
+    background-color: var(--color-text);
   }
 
   html {
