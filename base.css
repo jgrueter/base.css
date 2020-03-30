@@ -604,10 +604,10 @@ details {
   width: 100%;
   max-width: calc(100% - 2rem);
   position: relative;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--color-text);
   border-radius: 6px;
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   transition: background-color 0.15s;
 }
 
@@ -624,14 +624,14 @@ details::before {
   left: 0;
   border-radius: inherit;
   opacity: 0.15;
-  box-shadow: 0 0.25em 0.5em var(--background-color-alt);
+  box-shadow: 0 0.25em 0.5em var(--color-bg-secondary);
   pointer-events: none;
   transition: opacity 0.2s;
   z-index: -1;
 }
 
 details[open] {
-  background-color: var(--background-color);
+  background-color: var(--color-bg);
 }
 
 details summary {
@@ -650,7 +650,7 @@ details summary::before, summary::after {
   top: 50%;
   right: 0;
   content: '';
-  background-color: var(--text-color);
+  background-color: var(--color-text);
   text-align: right;
   transform: translateY(-50%);
   transition: transform 0.2s ease-in-out;
