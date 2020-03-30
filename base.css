@@ -127,6 +127,13 @@ a:hover {
   text-decoration-thickness: 3px;
 }
 
+a.neutral,
+a.neutral:hover {
+  color: inherit;
+  text-decoration: none;
+  filter: none;
+}
+
 a:focus {
   outline: 0;
 }
@@ -146,6 +153,7 @@ figure img {
 
 figure figcaption {
   color: var(--color-text-secondary);
+  font-size: 0.8rem;
 }
 
 hr {
@@ -405,26 +413,26 @@ ol ol {
 
 code,
 samp {
-    background-color: var(--color-accent);
-    border-radius: var(--border-radius);
-    color: var(--color-text);
-    display: inline-block;
-    margin: 0 0.1rem;
-    padding: 0rem 0.5rem;
-    text-align: var(--justify-normal);
-    font-family: "Consolas", "Monaco", "Menlo", monospace;
+  background-color: var(--color-accent);
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+  display: inline-block;
+  margin: 0 0.1rem;
+  padding: 0rem 0.5rem;
+  text-align: var(--justify-normal);
+  font-family: "Consolas", "Monaco", "Menlo", monospace;
 }
 
 pre {
-    white-space: normal;
+  white-space: normal;
 }
 
 pre code,
 pre samp {
-    display: block;
-    margin: 1rem 0;
-    max-width: var(--width-card-wide);
-    padding: 1rem;
+  display: block;
+  margin: 1rem 0;
+  max-width: var(--width-card-wide);
+  padding: 1rem;
 }
 
 
@@ -447,31 +455,31 @@ input,
 label,
 select,
 textarea {
-    display: block;
-    font-size: inherit;
-    width: 100%;
-    max-width: var(--width-card-wide);
+  display: block;
+  font-size: inherit;
+  width: 100%;
+  max-width: var(--width-card-wide);
 }
 
 input,
 select,
 textarea {
-    border: 1px solid var(--color-bg-secondary);
-    border-radius: var(--border-radius);
-    margin-bottom: 1rem;
-    padding: 0.4rem 0.8rem;
+  border: 1px solid var(--color-bg-secondary);
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.8rem;
 }
 
 label {
-    font-weight: bold;
-    margin-bottom: 0.2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
 }
 
 button:focus,
 input:focus,
 select:focus,
 textarea:focus {
-    outline: none;
+  outline: none;
 }
 
 button,
@@ -653,7 +661,7 @@ details summary::after {
 }
 
 details summary:focus {
-    outline: none;
+  outline: none;
 }
 
 [open] summary::after {
