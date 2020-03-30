@@ -14,11 +14,8 @@
   --color-brown: #795548;
   --color-black: #2A2A2A;
   --color-grey10: #171a20;
-  --color-grey15: #222;
   --color-grey20: #333333;
-  --color-grey25: #444;
   --color-grey30: #5c5e62;
-  --color-grey35: #757575;
   --color-grey40: #a2a3a5;
   --color-grey50: #d0d1d2;
   --color-grey60: #eee;
@@ -38,7 +35,7 @@
 
   --color: #118bee;
   --main-color: var(--color);
-  --color-accent: var(--color-grey35);
+  --color-accent: var(--color-aqua);
   --color-link: var(--color-blue);
   --color-bg: var(--color-white);
   --color-bg-secondary: var(--color-grey50);
@@ -46,7 +43,7 @@
   --color-secondary-accent: var(--color-maroon);
   --color-shadow: var(--color-grey70);
   --color-text: var(--color-grey20);
-  --color-text-secondary: var(--color-grey35);
+  --color-text-secondary: var(--color-grey40);
 }
 
 ::selection {
@@ -414,9 +411,9 @@ ol ol {
 
 code,
 samp {
-  background-color: var(--color-accent);
+  background-color: var(--color-grey50);
+  color: var(--color-grey20);
   border-radius: var(--border-radius);
-  color: var(--color-text);
   display: inline-block;
   margin: 0 0.1rem;
   padding: 0rem 0.5rem;
