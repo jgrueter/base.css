@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
   --color-red: #FF4136;
   --color-blue: #0074D9;
@@ -740,4 +742,26 @@ summary::-webkit-details-marker {
 
 .shadow-5 {
   box-shadow: 0 15px 24px rgba(0, 0, 0, 0.22), 0 19px 76px rgba(0, 0, 0, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  .shadow-1 {
+    box-shadow: 0 1.5px 4px rgba(255, 255, 255, 0.24), 0 1.5px 6px rgba(255, 255, 255, 0.12);
+  }
+
+  .shadow-2 {
+    box-shadow: 0 3px 12px rgba(255, 255, 255, 0.23), 0 3px 12px rgba(255, 255, 255, 0.16);
+  }
+
+  .shadow-3 {
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.23), 0 10px 40px rgba(255, 255, 255, 0.19);
+  }
+
+  .shadow-4 {
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.22), 0 14px 56px rgba(255, 255, 255, 0.25);
+  }
+
+  .shadow-5 {
+    box-shadow: 0 15px 24px rgba(255, 255, 255, 0.22), 0 19px 76px rgba(255, 255, 255, 0.3);
+  }  
 }
