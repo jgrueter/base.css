@@ -457,8 +457,10 @@ select,
 textarea {
   display: block;
   font-size: inherit;
+  font-family: inherit;
   width: 100%;
   max-width: var(--width-card-wide);
+  margin: 0 auto 1rem auto;
 }
 
 input,
@@ -585,9 +587,11 @@ tbody tr:hover {
   background-color: rgba(0, 0, 0, 0.075);
 }
 
-.table-container {
-  overflow-x: auto;
-  overflow-y: hidden;
+@media (max-width: 768px){
+  .table-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
 }
 
 /*=============================
