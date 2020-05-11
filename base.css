@@ -459,7 +459,7 @@ textarea {
   font-size: inherit;
   font-family: inherit;
   width: 100%;
-  max-width: var(--width-card-wide);
+  /* max-width: var(--width-card-wide); */
   margin: 0 auto 1rem auto;
 }
 
