@@ -241,7 +241,7 @@ blockquote footer {
 
 .row {
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   margin: 0 -0.5rem 0 -0.5rem;
   justify-content: space-between;
 }
