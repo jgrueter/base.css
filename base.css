@@ -265,6 +265,7 @@ a:focus {
   outline: 0;
 }
 
+/*
 a[href^='mailto']::before {
   content: '📧 ';
 }
@@ -276,6 +277,7 @@ a[href^='tel']::before {
 a[href^='sms']::before {
   content: '💬 ';
 }
+*/
 
 
 /*=============================
@@ -791,15 +793,6 @@ thead {
   display: table-header-group;
   border: 0;
 }
-
-thead th:first-child {
-  border-top-left-radius: var(--border-radius);
-}
-
-thead th:last-child {
-  border-top-right-radius: var(--border-radius);
-}
-
 
 thead th {
   height: 2.5em;
