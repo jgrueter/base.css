@@ -244,7 +244,7 @@ blockquote cite {
 a  {
   color: var(--color-text);
   text-decoration: underline;
-  text-decoration-color: var(--color-link);
+  text-decoration-color: var(--color-links);
   text-decoration-thickness: 2px;
 }
 
