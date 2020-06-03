@@ -48,13 +48,9 @@
   --color-links: #0076d1;
   --color-focus: #0096bfab;
   --color-border: var(--color-grey50);
-  --color-code: var(--color-black);
 
   --animation-duration: 0.1s;
   --button-hover: var(--color-grey50);
-
-  --scrollbar-thumb: rgb(213, 213, 213);
-  --scrollbar-thumb-hover: rgb(196, 196, 196);
 
   --form-placeholder: var(--color-grey40);
   --form-text: var(--color-black);
@@ -71,15 +67,7 @@
     --color-text-bright: var(--color-white);
     --color-text-muted: var(--color-grey40);
 
-    --color-links: #41adff;
-    --color-focus: #0096bfab;
-    --color-border: var(--color-grey50);
-    --color-code: #ffbe85;
-
     --button-hover: #324759;
-
-    --scrollbar-thumb: var(--button-hover);
-    --scrollbar-thumb-hover: rgb(20, 20, 20);
 
     --form-placeholder: var(--color-grey40);
     --form-text: var(--color-white);
@@ -470,7 +458,6 @@ samp {
   display: inline-block;
   margin: 0 0.1rem;
   padding: 0rem 0.5rem;
-  text-align: var(--justify-normal);
   font-family: "Consolas", "Monaco", "Menlo", monospace;
 }
 
@@ -482,7 +469,6 @@ pre > code,
 pre > samp {
   display: block;
   margin: 1rem 0;
-  max-width: var(--width-card-wide);
   padding: 1rem;
   overflow-x: auto;
 }
