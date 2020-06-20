@@ -47,7 +47,7 @@
   --color-links: #0076d1;
   --color-border: var(--color-grey50);
 
-  --animation-duration: 0.1s;
+  --animation-duration: 0.2s;
   --button-hover: var(--color-grey50);
 
   --form-placeholder: var(--color-grey40);
@@ -121,7 +121,9 @@ footer a {
   text-decoration: none;
 }
 
-img {
+img,
+audio,
+video {
   max-width: 100%;
   height: auto;
 }
@@ -167,7 +169,7 @@ small,
 }
 
 mark { 
-  color: inherit;
+  color: #2a2a2a;
   background-color: var(--color-yellow);
   padding: 0px 2px 0px 2px;
   border-radius: var(--border-radius);
@@ -474,7 +476,6 @@ form {
   display: block;
   padding: 1.5rem;
   width: 100%;
-  max-width: 800px;
 }
 
 input,
