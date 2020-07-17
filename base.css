@@ -124,13 +124,9 @@ footer a {
 img,
 audio,
 video {
+  display: block;
   max-width: 100%;
   height: auto;
-}
-
-audio, 
-video {
-  width: 100%;
 }
 
 figure {
