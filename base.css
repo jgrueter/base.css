@@ -73,6 +73,7 @@
   
   body.enable-dm img:not([src*=".svg"]) {
     filter: brightness(.8) contrast(1.2);
+    transition: all var(--animation-duration);
   }
   
   body.enable-dm img:not([src*=".svg"]):hover {
