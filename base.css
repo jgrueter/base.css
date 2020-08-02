@@ -129,9 +129,18 @@ footer a {
 img,
 audio,
 video {
-  display: block;
   max-width: 100%;
   height: auto;
+}
+
+img.16-9,
+video.16-9 {
+  ratio: 16 / 9;
+}
+
+img.4-3,
+video.4-3 {
+  ratio: 4 / 3;
 }
 
 figure {
@@ -139,8 +148,9 @@ figure {
   padding: 0;
 }
 
-figure img {
-  max-width: 100%;
+figure img,
+figure video {
+  width: 100%;
 }
 
 figure figcaption {
