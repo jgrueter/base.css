@@ -133,16 +133,6 @@ video {
   height: auto;
 }
 
-img.16-9,
-video.16-9 {
-  ratio: 16 / 9;
-}
-
-img.4-3,
-video.4-3 {
-  ratio: 4 / 3;
-}
-
 figure {
   margin: 0;
   padding: 0;
@@ -717,6 +707,10 @@ tbody tr:nth-of-type(odd) {
 
 tbody tr:hover {
   background-color: rgba(0, 0, 0, 0.075);
+}
+
+tbody td {
+  padding: 0.5rem;
 }
 
 @media (max-width: 768px){
