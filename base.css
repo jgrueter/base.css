@@ -181,7 +181,7 @@ small,
 mark { 
   color: #2a2a2a;
   background-color: var(--color-yellow);
-  padding: 0px 2px 0px 2px;
+  padding: 3px 6px;
   border-radius: var(--border-radius);
 }
 
@@ -414,7 +414,7 @@ ol {
 
 ul li,
 ol li {
-  margin-bottom: 1rem;
+  margin-top: 0.4rem;
 }
 
 ul li:last-child,
@@ -496,6 +496,7 @@ textarea {
   font-size: inherit;
   font-family: inherit;
   width: 100%;
+  max-width: 100%;
   margin: 0 auto 1rem auto;
   transition: background-color var(--animation-duration) linear,
               border-color var(--animation-duration) linear,
@@ -672,12 +673,10 @@ input[type="range"]:focus {
 
 table {
   width: 100%;
-  min-width: 600px;
   overflow-x: auto;
   overflow-y: hidden;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   border-collapse: collapse;
-  border: 1px solid var(--color-bg-secondary);
   font-variant-numeric: tabular-nums;
   border-spacing: 0;
 }
