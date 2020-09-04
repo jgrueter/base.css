@@ -48,7 +48,6 @@
   --color-border: var(--color-grey50);
 
   --animation-duration: 0.2s;
-  --button-hover: var(--color-grey50);
 
   --form-placeholder: var(--color-grey40);
   --form-text: var(--color-black);
@@ -180,7 +179,7 @@ small,
 
 mark { 
   color: #2a2a2a;
-  background-color: var(--color-yellow);
+  background-color: var(--color-highlight);
   padding: 3px 6px;
   border-radius: var(--border-radius);
 }
@@ -512,7 +511,6 @@ select {
 
 input,
 button,
-a button,
 textarea,
 select {
   color: inherit;
@@ -521,7 +519,7 @@ select {
   font-size: inherit;
   margin: 0 0.5rem 0.5rem 0;
   margin-right: 6px;
-  padding: 0.75rem;
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
   border: none;
   border-radius: var(--border-radius);
   outline: none;
@@ -530,7 +528,6 @@ select {
 input,
 select,
 button,
-a button,
 textarea {
   -webkit-appearance: none;
 }
@@ -558,20 +555,19 @@ select[multiple] {
 }
 
 button,
-a button,
 input[type="submit"],
 input[type="button"] {
   color: var(--color-bg);
-  background-color: var(--color-text-muted);
+  background-color: var(--color-blue);
   padding-right: 1rem;
   padding-left: 1rem;
+  cursor: pointer;
 }
 
 button:hover,
-a button,
 input[type="submit"]:hover,
 input[type="button"]:hover {
-  background: var(--button-hover);
+  filter: brightness(var(--hover-brightness));
 }
 
 input[type="checkbox"],
@@ -761,7 +757,7 @@ details::before {
   left: 0;
   border-radius: inherit;
   opacity: 0.15;
-  box-shadow: 0 0.25em 0.5em var(--color-bg-secondary);
+  box-shadow: var(--box-shadow);
   pointer-events: none;
   transition: opacity 0.2s;
   z-index: -1;
@@ -851,6 +847,12 @@ summary::-webkit-details-marker {
   .text-right-on-mobile {
     text-align: right;
   }
+}
+
+.full-width {
+  margin: auto calc(0px - (50vw - 50%)) auto;
+  padding-left: calc(50vw - 50%);
+	padding-right: calc(50vw - 50%);
 }
 
 .clear {
