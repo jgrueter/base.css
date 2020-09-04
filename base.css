@@ -159,6 +159,10 @@ abbr[title] {
   text-decoration: underline dotted;
 }
 
+abbr:hover {
+ cursor: help; 
+}
+
 b,
 strong {
   font-weight: bolder;
@@ -507,6 +511,7 @@ select {
 
 input,
 button,
+a button,
 textarea,
 select {
   color: inherit;
@@ -524,6 +529,7 @@ select {
 input,
 select,
 button,
+a button,
 textarea {
   -webkit-appearance: none;
 }
@@ -551,6 +557,7 @@ select[multiple] {
 }
 
 button,
+a button,
 input[type="submit"],
 input[type="button"] {
   color: var(--color-bg);
@@ -560,6 +567,7 @@ input[type="button"] {
 }
 
 button:hover,
+a button,
 input[type="submit"]:hover,
 input[type="button"]:hover {
   background: var(--button-hover);
