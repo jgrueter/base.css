@@ -488,8 +488,8 @@ form {
 }
 
 input,
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 button,
 textarea,
 select {
@@ -500,14 +500,16 @@ select {
   font-size: inherit;
   box-sizing: border-box;
   background-color: var(--color-bg-secondary);
-  border: 0;
+  border: 2px solid var(--color-bg-secondary);
   border-radius: var(--border-radius);
   transition: all var(--animation-duration);
 }
 
-input[type=text]:focus,
-input[type=email]:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
   background-color: var(--color-grey60);
+  border: 2px solid var(--color);
 }
 
 textarea {
@@ -521,6 +523,20 @@ fieldset {
   border: 1px var(--color-text) solid;
   border-radius: var(--border-radius);
   padding: 0.35em 0.75em 0.625em;
+}
+
+button,
+.button,
+input[type="submit"] {
+  color: white;
+  background-color: var(--color);
+}
+
+button:hover,
+.button:hover,
+input[type="submit"]:hover {
+  filter: brightness(var(--hover-brightness));
+  cursor: pointer;
 }
 
 /*=============================
