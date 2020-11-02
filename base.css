@@ -490,6 +490,8 @@ form {
 input,
 input[type="text"],
 input[type="email"],
+input[type="date"],
+input[type="time"],
 button,
 textarea,
 select {
@@ -507,9 +509,12 @@ select {
 
 input[type="text"]:focus,
 input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
 textarea:focus {
   background-color: var(--color-grey60);
   border: 2px solid var(--color);
+  outline: none;
 }
 
 textarea {
@@ -728,7 +733,7 @@ summary::-webkit-details-marker {
 .full-width {
   margin: auto calc(0px - (50vw - 50%)) auto;
   padding-left: calc(50vw - 50%);
-	padding-right: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
 }
 
 .clear {
