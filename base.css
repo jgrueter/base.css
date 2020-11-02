@@ -518,6 +518,14 @@ textarea:focus {
   outline: none;
 }
 
+body.enable-dm input[type="text"]:focus,
+body.enable-dm input[type="email"]:focus,
+body.enable-dm input[type="date"]:focus,
+body.enable-dm input[type="time"]:focus,
+body.enable-dm textarea:focus {
+  color: var(--color-bg);
+}
+
 textarea {
   margin-right: 0;
   width: 100%;
