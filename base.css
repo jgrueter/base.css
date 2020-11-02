@@ -500,6 +500,7 @@ select {
   margin: 0.8rem 0;
   font-family: inherit;
   font-size: inherit;
+  color: inherit;
   box-sizing: border-box;
   background-color: var(--color-bg-secondary);
   border: 2px solid var(--color-bg-secondary);
