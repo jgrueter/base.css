@@ -67,7 +67,7 @@
 	}
 
 	body.enable-dm img:not([src*=".svg"]):hover {
-		filter: brightness(1) contrast(1) grayscale(1);
+		filter: brightness(1) contrast(1) grayscale(0);
 	}
 }
 
