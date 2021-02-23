@@ -304,7 +304,8 @@ a:focus {
 /* Container + Grid */
 
 .container {
-	width: clamp(16rem, 99vw, var(--width-content));
+	width: 95%;
+	max-width: 1600px;
 	margin: 0 auto;
 }
 
