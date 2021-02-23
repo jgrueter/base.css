@@ -74,6 +74,7 @@
 	color: var(--color-bg);
 	background-color: var(--color-text);
 }
+
 *,
 *::before,
 *::after {
@@ -304,6 +305,7 @@ a:focus {
 
 .container {
 	width: clamp(16rem, 99vw, var(--width-content));
+	margin: 0 auto;
 }
 
 .row {
