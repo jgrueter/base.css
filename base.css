@@ -305,7 +305,7 @@ a:focus {
 
 .container {
 	width: 95%;
-	max-width: 1600px;
+	max-width: var(--width-content);
 	margin: 0 auto;
 }
 
