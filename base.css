@@ -425,12 +425,26 @@ select {
 	transition: all var(--animation-duration);
 }
 
+@media (prefers-color-scheme: dark) {
+	input,
+	input[type="text"],
+	input[type="email"],
+	input[type="date"],
+	input[type="time"],
+	button,
+	textarea,
+	select {
+		border-color: var(--color-bg-secondary);
+	}
+}
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="date"]:focus,
 input[type="time"]:focus,
 textarea:focus {
 	background-color: var(--color-grey60);
+	color: var(--color-grey20);
 	border: 2px solid var(--color);
 	outline: none;
 }
@@ -446,9 +460,9 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-	-webkit-appearance: button;
 	color: white;
 	background-color: var(--color);
+	border-color: var(--color);
 }
 
 button:hover,
@@ -460,24 +474,18 @@ button:hover,
 	cursor: pointer;
 }
 
+button:active,
+.button:active,
+[type="button"]:active,
+[type="reset"]:active,
+[type="submit"]:active {
+	border-color: var(--color-bg);
+}
+
 fieldset {
 	border: 1px var(--color-text) solid;
 	border-radius: var(--border-radius);
 	padding: 0.35em 0.75em 0.625em;
-}
-
-
-::-moz-focus-inner {
-	border-style: none;
-	padding: 0;
-}
-
-:-moz-focusring {
-	outline: 1px dotted ButtonText;
-}
-
-:-moz-ui-invalid {
-	box-shadow: none;
 }
 
 legend {
@@ -488,23 +496,8 @@ progress {
 	vertical-align: baseline;
 }
 
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-	height: auto;
-}
-
-[type='search'] {
-	-webkit-appearance: textfield; 
+[type="search"] {
 	outline-offset: -2px; 
-}
-
-::-webkit-search-decoration {
-	-webkit-appearance: none;
-}
-
-::-webkit-file-upload-button {
-	-webkit-appearance: button; 
-	font: inherit; 
 }
 
 /* Table */
