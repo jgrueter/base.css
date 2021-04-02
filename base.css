@@ -51,6 +51,7 @@
 		--color-bg: var(--color-grey20);
 		--color-bg-secondary: var(--color-grey30);
 		--color-text: var(--color-grey60);
+		--color-text-muted: var(--color-grey40);
 		
 		--form-text: var(--color-white);
 		--shadow: box-shadow: 0 1.5px 4px rgba(255, 255, 255, 0.24), 0 1.5px 6px rgba(255, 255, 255, 0.12);
@@ -417,6 +418,7 @@ select {
 	margin: 0.8em 0;
 	font-family: inherit;
 	font-size: inherit;
+	line-height: inherit;
 	color: inherit;
 	box-sizing: border-box;
 	background-color: var(--color-bg-secondary);
@@ -629,10 +631,6 @@ details summary:focus {
 
 [open] summary::after {
 	transform: translateY(-50%) rotate(180deg);
-}
-
-summary::-webkit-details-marker {
-	display: none;
 }
 
 summary {
