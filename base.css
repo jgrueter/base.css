@@ -520,7 +520,7 @@ thead {
 }
 
 thead th {
-	height: 2rem;
+	padding: 0.5em 0.5rem;
 	vertical-align: middle;
 	text-align: center;
 	background-color: var(--color);
