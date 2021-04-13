@@ -34,7 +34,7 @@
 	--color-bg: var(--color-white);
 	--color-bg-secondary: var(--color-grey50);
 
-	--color-text: var(--color-grey-20);
+	--color-text: var(--color-grey20);
 	--color-text-muted: var(--color-grey-40);
 	--color-link: #0076d1;
 	--color-border: var(--color-bg-secondary);
