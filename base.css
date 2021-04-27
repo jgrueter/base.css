@@ -200,28 +200,6 @@ mark {
 	border-radius: var(--border-radius);
 }
 
-mark.highlight {
-	background: linear-gradient(
-      100deg,
-      rgba(255, 221, 64, 0) 0.9%,
-      rgba(255, 221, 64, 1) 2.4%,
-      rgba(255, 221, 64, 0.5) 5.8%,
-      rgba(255, 221, 64, 0.1) 93%,
-      rgba(255, 221, 64, 0.7) 96%,
-      rgba(255, 221, 64, 0) 98%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(255, 221, 64, 0) 0%,
-      rgba(255, 221, 64, 0.3) 7.9%,
-      rgba(255, 221, 64, 0) 15%
-    );
-  border-radius: 0.125em;
-  box-decoration-break: clone;
-  font-style: normal;
-  padding: 0.125em 0.25em;
-}
-
 kbd {
 	background: var(--color-bg-secondary);
 	border: 1px solid var(--color-border);
@@ -405,11 +383,7 @@ textarea {
 	text-transform: none;
 }
 
-input,
-input[type="text"],
-input[type="email"],
-input[type="date"],
-input[type="time"],
+input
 button,
 textarea,
 select {
@@ -429,10 +403,6 @@ select {
 
 @media (prefers-color-scheme: dark) {
 	input,
-	input[type="text"],
-	input[type="email"],
-	input[type="date"],
-	input[type="time"],
 	button,
 	textarea,
 	select {
@@ -440,10 +410,7 @@ select {
 	}
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="date"]:focus,
-input[type="time"]:focus,
+input:focus
 textarea:focus {
 	background-color: var(--color-grey60);
 	color: var(--color-grey20);
