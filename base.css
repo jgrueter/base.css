@@ -286,8 +286,8 @@ dd::before {
 .row {
 	display: flex;
 	flex-wrap: nowrap;
-	margin: 0 -0.5em 0 -0.5em;
 	justify-content: space-between;
+	gap: 1em;
 }
 
 .row:not(:last-child) {
@@ -295,7 +295,7 @@ dd::before {
 }
 
 [class*="col"] {
-	margin: 0 0.5em 0 0.5em;
+	margin: 0;
 	padding: 0;
 }
 
@@ -311,7 +311,7 @@ dd::before {
 
 	[class*="col"] {
 		width: 100%;
-		margin: 0;
+		margin: 0 0 1em 0;
 		padding: 0;
 	}
 }
